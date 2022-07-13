@@ -1,0 +1,133 @@
+.newtask{
+    display:flex;
+    margin-top: -2rem;
+}
+
+.newTaskForm {
+    display: flex;
+    gap: 8px;
+}
+
+.newTaskForm input {
+    width: 638px;
+    height: 54px;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    padding-left: 1rem;
+}
+
+.newTaskForm button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: var(--blue-600);
+    color: var(--white);
+    font-size:14px;
+}
+
+.newTaskForm  button p {
+    display: flex;
+    align-items: center;
+    height: 16px;
+}
+
+.listTask {
+    margin-top: 2rem;
+}
+
+.tasks{
+    padding: 0;
+    color: var(--withe);
+    margin-top: 2rem;
+    gap: 24px;
+}
+
+.tasks header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.createdTask {
+    color: var(--blue-500);
+}
+
+.createdTask span:nth-of-type(1) {
+    color: var(--gray-200);
+    background: var(--gray-300);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.stateTask {
+    color: var(--purple-500);
+}
+
+.stateTask span:nth-of-type(1) {
+    color: var(--gray-200);
+    background: var(--gray-300);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.tasksList {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    background: var(--gray-500);
+    padding: 1rem;
+    gap: 12px;
+}
+
+.tasksList + .tasksList {
+    margin-top: 1rem;
+}
+
+.tasksList input[type="checkbox"] {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background: url(../assets/img/check.svg) 0px center no-repeat;
+}
+.tasksList input[type="checkbox"]:checked {
+    display:flex;
+    align-items: center;
+    border:0;
+    background: url(../assets/img/checked.svg) 0px center no-repeat;
+}
+.tasksList input[type="checkbox"]:checked + .tasksContent span {
+    text-decoration: line-through;
+}
+
+.tasksList input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.tasksContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasksContent button {
+    background: transparent;
+    border: 0;
+    line-height: 0;
+    color: var(--gray-300);
+    border-radius: 2px;
+
+    transition: all 0.2s;
+}
+
+.tasksContent button:hover{
+    color: var(--gray-200);
+}
+

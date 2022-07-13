@@ -1,0 +1,9 @@
+.taskarea {
+    max-width: 46rem;
+    padding: 0;
+    margin: 0 auto;
+
+    /* display: grid;
+    grid-template-columns: 46rem 1fr; */
+    /* align-items: flex-start; */
+}
